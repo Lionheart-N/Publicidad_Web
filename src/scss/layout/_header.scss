@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+// HEADER 
+.header{
+    background-image: url(/build/img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60rem;
+}
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    height: 60rem;
+    width: 100%;
+}
+.header__informacion-down{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: v.$negro;
+}
