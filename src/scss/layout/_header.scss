@@ -1,15 +1,17 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 // HEADER 
 .header{
-    background-image: url(/build/img/header.jpg);
+    background-image: url(/build/img/building-7092747_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 60rem;
+    //color: v.$blanco;
 }
 .overlay{
     position: absolute;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     height: 60rem;
     width: 100%;
 }
@@ -19,8 +21,57 @@
     display: block;
 }
 .barra{
+    padding-top: 3rem;
+    @include m.tablet{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.logo{
+    color: v.$blanco;
+    align-items: center;
+}
+.navegacion{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: v.$negro;
+    font-size: 2rem;
+    line-height: 2;
+    flex: 0 0 calc(33.3% - 1rem);
+    @include m.tablet{
+        flex-direction: row;
+    }
+}
+.navegacion__enlace{
+    color: v.$blanco;
+}
+.header__texto{
+    padding-top: 5rem;
+    font-size: bold;
+    @include m.tablet{
+        padding-top: 16rem;
+    }
+    p{
+        color: v.$blanco;
+    }
+}
+.boton{
+    //background-color: v.$azulClaro;
+    background-color: v.$azul;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+    color: v.$blanco;
+    align-items: center;
+    transition: all 0.4s ease-out;
+
+}
+.boton:hover{
+    background-color: v.$azulClaro
+    //background-color: v.$azul;
 }

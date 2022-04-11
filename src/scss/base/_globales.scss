@@ -3,6 +3,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /* AGREGAR SIEMPRE*/
+    color: variables.$blanco;
 
 }
 *, *:before, *:after {
@@ -28,7 +29,7 @@ a{
     text-decoration: none;
 }
 h1,h2,h3{
-    margin: 0 0 5rem 0;
+    //margin: 0 0 5rem 0;
 }
 h1{
     font-size: 4rem;
@@ -42,4 +43,16 @@ h3{
 img{
     max-width: 100%;
     display: block;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+.centrar-texto{
+    text-align: center;
 }
