@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros{
+
+    @include m.tablet{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    h2{
+        color: v.$azul;
+    }
+    p{
+        margin: 0;
+    }
+}
+.nosotros__imagen{
+    @include m.tablet{
+        min-width: 40rem;
+    }
+    
+}
+.nosotros__informacion{
+    padding: 5rem 0 5rem 0;
+    @include m.tablet{
+        padding-top: 5rem;
+    }
+    
+}

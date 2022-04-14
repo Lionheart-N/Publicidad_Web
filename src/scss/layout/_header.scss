@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 // HEADER 
 .header{
-    background-image: url(/build/img/building-7092747_1920.jpg);
+    background-image: url(/build/img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -46,10 +46,11 @@
 }
 .navegacion__enlace{
     color: v.$blanco;
+    min-width: 12rem;
 }
 .header__texto{
     padding-top: 5rem;
-    font-size: bold;
+    color: v.$blanco;
     @include m.tablet{
         padding-top: 16rem;
     }

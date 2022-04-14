@@ -3,7 +3,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /* AGREGAR SIEMPRE*/
-    color: variables.$blanco;
+    //color: variables.$blanco;
 
 }
 *, *:before, *:after {
@@ -12,6 +12,8 @@ html{
 body{
     //font-family: variables.$fuente_principal;
     font-size: 1.6rem;
+    width: 100%;
+    height: 100%;
     //line-height: 2;
 }
 /*GLOBALES*/
@@ -27,9 +29,6 @@ p{
 }
 a{
     text-decoration: none;
-}
-h1,h2,h3{
-    //margin: 0 0 5rem 0;
 }
 h1{
     font-size: 4rem;
@@ -50,9 +49,18 @@ img{
 .no-padding{
     padding: 0;
 }
+.padding-6{
+    padding: 0 6rem 0 6rem;
+}
 .margin-bottom{
     margin-bottom: 2rem;
 }
+.font-size-4{
+    font-size: 4.3rem;
+}
 .centrar-texto{
     text-align: center;
+}
+.justificar-texto{
+    text-align: justify;
 }
